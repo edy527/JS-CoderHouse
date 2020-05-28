@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="main.js"></script>
+  <title>Clase uno de JS</title>
+  <style>
+    .productos {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      justify-content: center;
+    }
+
+    .productos a {
+      width: 27%;
+      /* cada bloque de a va a ocupar 27% de su contenedor padre (el contenedor padre es .productos) */
+    }
+
+    .productos a img {
+      width: 100%;
+      /* con esto le digo a las imagenes que estan dentro de a y esta dentro de productos que ocupen el todo el espacio disponible de su contenedor padre (en este caso es la etiqueta a) */
+      margin: 15px;
+      border: 2px solid #8E8787;
+      box-shadow: 0 0 0 2px white;
+    }
+
+    /*    @media screen and (max-width:768px) {
+      .productos img {
+        width: 60%;
+      }
+    }
+
+    @media screen and (max-width:365px) {
+      .productos img {
+        width: 65%;
+      }
+    } */
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Curso de JavaScript</h1>
+  </header>
+
+  <div class="productos">
+    <a href="tabla-zapato.html">
+      <img id="zoom3" src="imagenes/imagen.jpg" alt="sandalia">
+    </a>
+    <a href="tabla-sobre.html"><img id="zoom3" src="imagenes/imagen.jpg" alt="sobre"></a>
+    <a href="tabla-aros.html"><img id="zoom3" src="imagenes/imagen.jpg" alt="aros"></a>
+    <a href="tabla-aros.html"><img id="zoom3" src="imagenes/imagen.jpg" alt="aros"></a>
+    <a href="tabla-aros.html"><img id="zoom3" src="imagenes/imagen.jpg" alt="aros"></a>
+    <a href="tabla-aros.html"><img id="zoom3" src="imagenes/imagen.jpg" alt="aros"></a>
+    <a href="tabla-aros.html"><img id="zoom3" src="imagenes/imagen.jpg" alt="aros"></a>
+
+  </div>
+
+</body>
+
+</html>
